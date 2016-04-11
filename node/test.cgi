@@ -20,7 +20,7 @@ var body =
 +'<html>';
 
 
-console.log(header + body);
+console.log(header + '<hr>' + body);
 
 var obj = process.env;
 var a =Object.getOwnPropertyNames(obj).sort();
@@ -30,6 +30,7 @@ a.forEach(function(val, idx, array) {
 
 
 console.log( '<!doctype html>'
++ '<hr>'
 +'<h3>Post Form</h3>'
 +'<form id="postform" action="processdata.cgi" method="post">'
 +'<label>Name: <input type="text" name="username"></label>'
@@ -53,6 +54,5 @@ console.log( '<!doctype html>'
 +'<input type="hidden" name="test" value="it">'
 +'<input type="submit" value="send">'
 +'</form>'
-
 +'</body>'
 +'</html>');
