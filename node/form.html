@@ -25,9 +25,9 @@
 console.log("Content-Type: text/html;charset-utf-8");
 console.log("");
 try {
-var username = document.getElementsByName("username");
-var password = document.getElementsByName("password");
-var magicnum1 = document.getElementsByName("magicnum");
+var username = document.getElementsByName("username").toString();
+var password = document.getElementsByName("password").toString();
+var magicnum1 = document.getElementsByName("magicnum").toString();
 }
 catch(err) {
    console.log("<p>There was an error with your input: </p>" + err);
