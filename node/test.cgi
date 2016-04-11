@@ -15,7 +15,7 @@ var body =
 + '<hr>' 
 +'<h2 align="center">Environment Variables</h2>'
 + '<script>'
-+ 'document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]'
++ 'document.body.style.background="#DFDFFF"'
 + ' </script>'
 +'</body>'
 +'<html>';
