@@ -5,8 +5,8 @@ console.log("Content-Type: text/html;charset-utf-8");
 console.log("");
 console.log("test");
 try {
-var username = document.getElementsByName("username")[0].value;;
-var password = document.getElementsByName("password")[0].value;
+var username = document.getElementsByName("username1")[0].value;;
+var password = document.getElementsByName("password1")[0].value;
 var magicnum1 = oForm.elements["magicnum"].value;
 }
 catch(err) {
