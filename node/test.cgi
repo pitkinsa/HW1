@@ -27,3 +27,32 @@ var a =Object.getOwnPropertyNames(obj).sort();
 a.forEach(function(val, idx, array) {
   console.log('<b>' + val + ': ' + '</b>'  + obj[val]+ '<br>');
 }); 
+
+
+console.log( "<h3>Post Form</h3>
+<form id="postform" action="processdata.cgi" method="post">
+<label>Name: <input type="text" name="username"></label>
+<br>
+<label>Password: <input type="password" name="password"></label>
+<br>
+<label>Magic Number: <input type="text" name="magicnum" size="2" maxlength="2"></label>
+<br>
+<input type="hidden" name="test" value="it">
+<input type="submit" value="send">
+</form>
+
+<hr>
+<h3>Get Form</h3>
+<form id="getform" action="processdata.cgi" method="get">
+<label>Name: <input type="text" name="username"></label>
+<br>
+<label>Password: <input type="password" name="password"></label>
+<br>
+<label>Magic Number: <input type="text" name="magicnum" size="2" maxlength="2"></label>
+<br>
+<input type="hidden" name="test" value="it">
+<input type="submit" value="send">
+</form>
+
+</body>
+</html>");
