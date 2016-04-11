@@ -12,15 +12,17 @@ var body =
 +'</head>'
 +'<body>'
 +'<h2 style="margin-bottom:20px"> Hello World from JavaScript @ ' + d + '</h2>'
++ '<hr>' 
 +'<h2 align="center">Environment Variables</h2>'
 + '<script>'
-+' var bgcolorlist=new Array("#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00") document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]'
-+' </script>'
++ 'var bgcolorlist=new Array("#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00")'
++ 'document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]'
++ ' </script>'
 +'</body>'
 +'<html>';
 
 
-console.log(header + '<hr>' + body);
+console.log(header + body);
 
 var obj = process.env;
 var a =Object.getOwnPropertyNames(obj).sort();
@@ -30,7 +32,7 @@ a.forEach(function(val, idx, array) {
 
 
 console.log( '<!doctype html>'
-+ '<hr>'
++ '<hr style="margin-top:20px">'
 +'<h3>Post Form</h3>'
 +'<form id="postform" action="processdata.cgi" method="post">'
 +'<label>Name: <input type="text" name="username"></label>'
