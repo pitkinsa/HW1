@@ -5,8 +5,8 @@ console.log("Content-Type: text/html;charset-utf-8");
 console.log("");
 console.log("test");
 try {
-var username = oForm.elements["username"].value;
-var password = oForm.elements["password"].value;
+var username = document.getElementsByName("username")[0].value;;
+var password = document.getElementsByName("password")[0].value;
 var magicnum1 = oForm.elements["magicnum"].value;
 }
 catch(err) {
@@ -14,7 +14,7 @@ catch(err) {
 }
 
 var s = "<h1>Hello " + username +"with a password of" + password +"</h1></br>";
-s = s * magicnum1;
+//s = s * magicnum1;
 console.log(s);
 
 }
