@@ -2,7 +2,7 @@
 
 var header ='Content-type: text/html\n\n';
 var d = new Date();
-var bgcolorlist=new Array("#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00")
+var bgcolorlist=["#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00"];
 var body =
 '<!doctype html>'
 +'<head>'
