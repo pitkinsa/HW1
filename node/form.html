@@ -4,7 +4,23 @@
 <title>CGI Form</title>
 </head>
 <body>
-  <script>
+  
+
+<h1>Form Test</h1>
+<hr>
+<h3>Post Form</h3>
+<form id="postform"  method="post">
+<label>Name: <input type="text" name="username"></label>
+<br>
+<label>Password: <input type="password" name="password"></label>
+<br>
+<label>Magic Number: <input type="text" name="magicnum" size="2" maxlength="2"></label>
+<br>
+<input type="hidden" name="test" value="it">
+<input type="submit" value="send" onclick="main1()">
+</form>
+
+<script>
   function main1() {
 console.log("Content-Type: text/html;charset-utf-8");
 console.log("");
@@ -22,20 +38,6 @@ s = s * magicnum1;
 console.log(s);
 }
 </script>
-
-<h1>Form Test</h1>
-<hr>
-<h3>Post Form</h3>
-<form id="postform"  method="post">
-<label>Name: <input type="text" name="username"></label>
-<br>
-<label>Password: <input type="password" name="password"></label>
-<br>
-<label>Magic Number: <input type="text" name="magicnum" size="2" maxlength="2"></label>
-<br>
-<input type="hidden" name="test" value="it">
-<input type="submit" value="send" onclick="main1()">
-</form>
 
 <hr>
 <h3>Get Form</h3>
