@@ -4,7 +4,7 @@
 function main() {
 console.log("Content-Type: text/html;charset-utf-8");
 console.log("");
-console.log("hello");
+console.log("test");
 try {
 username = oForm.elements["username"].value;
 password = oForm.elements["password"].value;
