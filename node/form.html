@@ -33,9 +33,9 @@ catch(err) {
    console.log("<p>There was an error with your input: </p>" + err);
 }
 
-document.getElementById("postform").innerHTML = "<h1>Hello " + username +"with a password of" + password +"</h1></br>";
+var s = "<h1>Hello " + username +"with a password of" + password +"</h1></br>";
 s = s * magicnum1;
-console.log(s);
+document.getElementById("postform").innerHTML =s;
 }
 </script>
 
