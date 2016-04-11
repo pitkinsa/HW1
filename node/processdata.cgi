@@ -1,6 +1,7 @@
 #!/usr/bin/node
 
-
+console.log("hello");
+/*
 function main() {
 console.log("Content-Type: text/html;charset-utf-8");
 console.log("");
