@@ -4,10 +4,30 @@
 <title>CGI Form</title>
 </head>
 <body>
+  <script>
+  function main1() {
+console.log("Content-Type: text/html;charset-utf-8");
+console.log("");
+console.log("test");
+try {
+var username = oForm.elements["username"].value;
+var password = oForm.elements["password"].value;
+var magicnum1 = oForm.elements["magicnum"].value;
+}
+catch(err) {
+   console.log("<p>There was an error with your input: </p>" + err);
+}
+
+var s = "<h1>Hello " + username +"with a password of" + password +"</h1></br>";
+s = s * magicnum1;
+console.log(s);
+}
+</script>
+
 <h1>Form Test</h1>
 <hr>
 <h3>Post Form</h3>
-<form id="postform" action="processdata.cgi" method="post">
+<form id="postform" onclick="main1()" method="post">
 <label>Name: <input type="text" name="username"></label>
 <br>
 <label>Password: <input type="password" name="password"></label>
