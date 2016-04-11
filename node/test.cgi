@@ -20,7 +20,7 @@ var body =
 +'</body>'
 +'<html>';
 
-console.log(bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]);
+
 console.log(header + body);
 
 var obj = process.env;
