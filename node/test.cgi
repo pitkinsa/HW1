@@ -15,7 +15,7 @@ var body =
 + '<hr>' 
 +'<h2 align="center">Environment Variables</h2>'
 + '<script>'
-+ 'var bgcolorlist=["#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00"];'
++ 'var bgcolorlist=["#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#E8FFB3", "#ECE8D5", "#FA8072", "#DDDD00", "#D2B48C", "#FF7F50", "#F5FFFA", "#96CDCD", "#A27EAF", "#61456A", "#33659A"];'
 + 'document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)];'
 + ' </script>'
 +'</body>'
