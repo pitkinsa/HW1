@@ -2,7 +2,7 @@
 
 var header ='Content-type: text/html\n\n';
 var d = new Date();
-var bgcolorlist=["#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00"];
+
 var body =
 '<!doctype html>'
 +'<head>'
@@ -15,7 +15,8 @@ var body =
 + '<hr>' 
 +'<h2 align="center">Environment Variables</h2>'
 + '<script>'
-+ 'document.body.style.background=bgcolorlist[3]'
++ 'var bgcolorlist=["#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00"];'
++ 'document.body.style.background=bgcolorlist[3];'
 + ' </script>'
 +'</body>'
 +'<html>';
