@@ -22,7 +22,7 @@ class ex {
 	  Top+= "</head>\n";
 	  Top+= "<body>\n";
 	  System.out.println(Top);
-	  System.out.println("Hello World from Java");
+	  System.out.println("Hello World from Java @"+ new Date());
 
       //
       // Create the Bottom of the returned HTML page to close it cleanly.
