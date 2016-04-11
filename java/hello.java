@@ -20,7 +20,7 @@ class hello {
         + "\n"
         + "</title>\n"
         + "<style>\n";
-        
+
         // Generate a number between 1 and 16
         Random rand = new Random();
         int r = rand.nextInt(16);
@@ -63,12 +63,12 @@ class hello {
 
 
 
-        Top += "</style>\n" 
+        Top += "</style>\n"
         + "</head>\n"
         + "<body>\n";
           System.out.println(Top);
           System.out.println("Hello World from Java @" + new Date());
-	
+
 
 	System.out.println("<hr>");
 
@@ -97,10 +97,10 @@ class hello {
         System.out.println("</table>");
 
 
- 
+
 	System.out.println("<h1>Form Test</h1>");
         System.out.println("<hr>");
-        System.out.println("<form action='hello.cgi' method=Post'>");
+        System.out.println("<form action='getdata.cgi' method=Post'>");
         System.out.println("<label>Name: <input type='text' name='username'></label>");
         System.out.println(" <br>");
         System.out.println("<label>Password: <input type='password' name='password'></label>");
