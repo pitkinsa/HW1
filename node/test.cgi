@@ -2,7 +2,7 @@
 
 var header ='Content-type: text/html\n\n';
 var d = new Date();
-
+var bgcolorlist=new Array("#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00")
 var body =
 '<!doctype html>'
 +'<head>'
@@ -15,13 +15,12 @@ var body =
 + '<hr>' 
 +'<h2 align="center">Environment Variables</h2>'
 + '<script>'
-+ 'var bgcolorlist=new Array("#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00")'
 + 'document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]'
 + ' </script>'
 +'</body>'
 +'<html>';
 
-
+console.log(bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]);
 console.log(header + body);
 
 var obj = process.env;
