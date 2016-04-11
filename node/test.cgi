@@ -15,7 +15,7 @@ var body =
 + '<hr>' 
 +'<h2 align="center">Environment Variables</h2>'
 + '<script>'
-+ 'document.body.style.background="#DFDFFF"'
++ 'document.body.style.background=bgcolorlist[3]'
 + ' </script>'
 +'</body>'
 +'<html>';
