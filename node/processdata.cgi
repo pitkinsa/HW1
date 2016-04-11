@@ -2,6 +2,7 @@
 
 console.log("Content-Type: text/html;charset-utf-8")
 console.log("")
+function main() {
 try {
 username = oForm.elements["username"].value;
 password = oForm.elements["password"].value;
@@ -15,6 +16,9 @@ s = "<h1>Hello " + username +"with a password of" + password +"</h1></br>";
 s = s * magicnum1;
 console.log(s);
 }
+}
+
+main();
 
 function validString(input){
     return !(/[\\/&;]/.test(input));
