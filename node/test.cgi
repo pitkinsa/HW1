@@ -29,7 +29,7 @@ a.forEach(function(val, idx, array) {
 }); 
 
 
-console.log( "<h3>Post Form</h3>
+console.log( '<h3>Post Form</h3>
 <form id="postform" action="processdata.cgi" method="post">
 <label>Name: <input type="text" name="username"></label>
 <br>
@@ -55,4 +55,4 @@ console.log( "<h3>Post Form</h3>
 </form>
 
 </body>
-</html>");
+</html>');
