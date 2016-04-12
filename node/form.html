@@ -24,7 +24,7 @@
 
 <hr>
 <h3>Get Form</h3>
-<form id="getform" method="get">
+<form id="getform" method="get" action="processdata.cgi">
 <label>Name: <input type="text" name="username"></label>
 <br>
 <label>Password: <input type="password" name="password"></label>
@@ -32,7 +32,7 @@
 <label>Magic Number: <input type="text" name="magicnum" size="2" maxlength="2"></label>
 <br>
 <input type="hidden" name="test" value="it">
-<input type="submit" value="send" onclick="main1()">
+<input type="submit" value="send">
 </form>
 
 <script>
