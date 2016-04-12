@@ -11,9 +11,11 @@ catch(err) {
 }
 //var s = "<h1>Hello " + username +" with a password of " + password +"</h1></br>";
 //s = s * magicnum1;
-var myWindow = window.open("", "_self");
+else {
+   var myWindow = window.open("", "_self");
 myWindow.document.write("<h1>Hello " + username +" with a password of " + password+ "</h1></br>");
 //document.write("test");
+}
 }
  
  main2();
