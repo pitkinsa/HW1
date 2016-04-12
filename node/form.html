@@ -43,15 +43,34 @@ document.write("test");
 <hr>
 <h3>Get Form</h3>
 <form id="getform" action="processdata.cgi" method="get">
-<label>Name: <input type="text" name="username"></label>
+<label>Name: <input type="text" name="username1"></label>
 <br>
-<label>Password: <input type="password" name="password"></label>
+<label>Password: <input type="password" name="password1"></label>
 <br>
-<label>Magic Number: <input type="text" name="magicnum" size="2" maxlength="2"></label>
+<label>Magic Number: <input type="text" name="magicnum1" size="2" maxlength="2"></label>
 <br>
 <input type="hidden" name="test" value="it">
-<input type="submit" value="send">
+<input type="submit" value="send" onclick="main2()">
 </form>
 
+<script>
+  function main2() {
+try {
+var username = document.getElementsByName("username1")[0].value;
+var password = document.getElementsByName("password1")[0].value;
+var magicnum1 = document.getElementsByName("magicnum1")[0].value;
+}
+catch(err) {
+   console.log("<p>There was an error with your input: </p>" + err);
+}
+
+var s = "<h1>Hello " + username +" with a password of " + password +"</h1></br>";
+
+s = s * magicnum1;
+//var myWindow = window.open("", "_self");
+document.write("<h1>Hello " + username +" with a password of " + password+ "</h1></br>");
+document.write("test");
+}
+</script>
 </body>
 </html>
