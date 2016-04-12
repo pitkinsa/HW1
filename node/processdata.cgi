@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-function main2() {
+var main2 = function {
 try {
 var username = document.getElementsByName("username1")[0].value;
 var password = document.getElementsByName("password1")[0].value;
@@ -16,4 +16,4 @@ document.write("<h1>Hello " + username +" with a password of " + password+ "</h1
 document.write("test");
 }
  
- main2();
+ main2;
